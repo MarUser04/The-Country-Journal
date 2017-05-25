@@ -1,0 +1,56 @@
+@import "cabecera";
+@import "slider";
+@import "main";
+
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background: url('../images/texture.jpg');
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	font-family: 'Asap', sans-serif;
+}
+
+
+
+footer{
+	margin-top: 20px;
+	align-self: flex-end;
+	background: tomato;
+	width: 100%;
+	padding: 1em;
+	color: #fff;
+	text-align: center;
+}
+
+
+@media screen and (max-width: 600px){
+	header{
+		h1{
+			font-size: 2em;
+		}
+
+		.navegacion{
+			a{
+				visibility: hidden;
+			}
+		}
+	}
+
+	section#slider{
+		figure{
+			&.visible>img{
+				width: 100%;
+			}
+		}
+	}
+
+	main{
+		flex-direction: column;
+	}
+}

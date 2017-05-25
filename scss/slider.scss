@@ -1,0 +1,34 @@
+section#slider figure{
+
+	img{
+		display: none;
+		margin: 0px auto;
+	}
+
+	&.visible > img {
+		display: block;
+		position: relative;
+		overflow: hidden;
+		width: 1200px;
+		height: 500px;
+		margin-bottom: 30px;
+		/*border: 2px solid #555;
+		outline: 3px solid #fff;*/
+		 box-shadow:
+	    0 0 0 10px hsl(0, 0%, 80%),
+	    0 0 0 15px hsl(0, 0%, 90%);
+	}
+
+	 figcaption{
+		display: none;
+	}
+
+	&.visible > figcaption{
+		display: block;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em;
+		color: #fff;
+	}
+
+}
