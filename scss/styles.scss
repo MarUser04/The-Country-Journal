@@ -33,12 +33,7 @@ footer{
 	header{
 		h1{
 			font-size: 2em;
-		}
-
-		.navegacion{
-			a{
-				visibility: hidden;
-			}
+		
 		}
 	}
 
@@ -53,4 +48,10 @@ footer{
 	main{
 		flex-direction: column;
 	}
+}
+
+@media screen and (max-width: 400){
+		section.first-section{
+			width: 100%;
+		}
 }

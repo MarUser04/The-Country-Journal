@@ -314,8 +314,6 @@ footer {
 @media screen and (max-width: 600px) {
   header h1 {
     font-size: 2em; }
-  header .navegacion a {
-    visibility: hidden; }
   section#slider figure.visible > img {
     width: 100%; }
   main {
@@ -323,3 +321,7 @@ footer {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column; } }
+
+@media screen and (max-width: 400) {
+  section.first-section {
+    width: 100%; } }
