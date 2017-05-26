@@ -1,32 +1,13 @@
 @import "cabecera";
 @import "slider";
 @import "main";
+@import "mixins";
 
-*{
-	box-sizing: border-box;
-}
 
-body{
-	margin: 0;
-	padding: 0;
-	background: url('../images/texture.jpg');
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
-	font-family: 'Asap', sans-serif;
-}
+@include cuerpo;
 
 
 
-footer{
-	margin-top: 20px;
-	align-self: flex-end;
-	background: tomato;
-	width: 100%;
-	padding: 1em;
-	color: #fff;
-	text-align: center;
-}
 
 
 @media screen and (max-width: 600px){

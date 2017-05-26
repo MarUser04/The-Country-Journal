@@ -1,0 +1,56 @@
+@mixin cuerpo{
+
+	*{
+		box-sizing: border-box;
+	}
+
+	body{
+		margin: 0;
+		padding: 0;
+		background: url('../images/texture.jpg');
+		display: flex;
+		min-height: 100vh;
+		flex-direction: column;
+		font-family: 'Asap', sans-serif;
+	}
+
+	footer{
+		margin-top: 20px;
+		align-self: flex-end;
+		background: tomato;
+		width: 100%;
+		padding: 1em;
+		color: #fff;
+		text-align: center;
+	}
+
+}
+
+
+@mixin tituloPais{
+	h1{
+		text-align: center;
+		font-size: 4em;
+		color: #fff;
+		font-style: italic;
+		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+}
+
+@mixin flexbox($wth){
+	display: flex;
+	max-width: $wth;
+}
+
+@mixin armazon($margen, $flexP){
+			margin-right: $margen;
+			border: 1px solid black;
+			background: #dbd6e0;
+			border-radius: 14px;
+			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+			 display: flex;
+			flex: 1 1 $flexP;
+
+}

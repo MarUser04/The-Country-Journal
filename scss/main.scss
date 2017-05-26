@@ -1,7 +1,8 @@
+@import "mixins";
+
 main{
-	display: flex;
-	flex-direction: row;
-	max-width: 100%;
+	
+	@include flexbox(100%);
 	justify-content: space-between;
 
 
@@ -14,17 +15,11 @@ main{
 		margin-right: 20px;
 
 		.art1{
-			
-			margin-right: 0px;
-			border: 1px solid black;
-			padding:20px;
-			background: #dbd6e0;
-			border-radius: 14px;
-			 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	
 
-			 display: flex;
+			@include armazon(0px, 35%);
 			flex-direction: column;
-			flex: 1 1 35%;
+			padding: 20px;
 
 			h2{
 				text-align: center;
@@ -49,6 +44,7 @@ main{
 
 		.art2{
 			flex: 1 1 30%;
+			
 			margin-right: 20px;
 			border: 1px solid black;
 			background: #dbd6e0;
