@@ -16,34 +16,6 @@ header {
 
 .navegacion {
   width: 100%;
-  /*ul{
-		display: flex;
-		list-style-type: none;
-	    margin-top: 10px;
-	    padding: 0;
-	    overflow: hidden;
-	    background-color: tomato;
-	}
-
-	li {
-		a{
-		    display: block;
-		    color: white;
-		    text-align: center;
-		    margin-right: 150px;
-		    padding: 14px 16px;
-		    text-decoration: none;
-
-		    &:first-child{
-				margin-left: 100px;
-			}	
-
-			&:hover{
-				background: #555;
-			}
-
-		}
-	}*/
   margin-top: 10px;
   margin-bottom: 10px; }
   .navegacion nav {
@@ -313,7 +285,10 @@ footer {
 
 @media screen and (max-width: 600px) {
   header h1 {
-    font-size: 2em; }
+    font-size: 2em;
+    text-align: center; }
+  .navegacion a {
+    margin-left: 5px; }
   section#slider figure.visible > img {
     width: 100%; }
   main {
@@ -322,6 +297,6 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; } }
 
-@media screen and (max-width: 400) {
+@media screen and (max-width: 480px) {
   section.first-section {
-    width: 100%; } }
+    display: none !important; } }

@@ -33,7 +33,14 @@ footer{
 	header{
 		h1{
 			font-size: 2em;
+			text-align: center;
 		
+		}
+	}
+
+	.navegacion{
+		a{
+			margin-left: 5px;
 		}
 	}
 
@@ -50,8 +57,12 @@ footer{
 	}
 }
 
-@media screen and (max-width: 400){
-		section.first-section{
-			width: 100%;
+@media screen and (max-width: 480px){
+	section.first-section{
+		.art1{
+			
 		}
+
+		display: none !important;
+	}
 }
