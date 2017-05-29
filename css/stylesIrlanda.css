@@ -190,19 +190,29 @@ main {
         margin-top: 5px; }
         main .segundaParte .art2 div.Estadisticas h3 {
           text-align: center; }
-        main .segundaParte .art2 div.Estadisticas div.art2-1 img {
-          width: 480px;
-          height: 250px;
-          -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          float: left;
-          margin: 10px; }
-        main .segundaParte .art2 div.Estadisticas div.art2-1 ul {
-          list-style: none;
-          -ms-flex-wrap: wrap;
-              flex-wrap: wrap; }
-          main .segundaParte .art2 div.Estadisticas div.art2-1 ul li {
-            margin-top: 10px; }
+        main .segundaParte .art2 div.Estadisticas div.art2-1 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column; }
+          main .segundaParte .art2 div.Estadisticas div.art2-1 img {
+            -ms-flex-item-align: center;
+                align-self: center;
+            width: 400px;
+            height: 200px;
+            -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            float: left;
+            margin: 10px; }
+          main .segundaParte .art2 div.Estadisticas div.art2-1 ul {
+            list-style: none;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap; }
+            main .segundaParte .art2 div.Estadisticas div.art2-1 ul li {
+              margin-top: 10px; }
     main .segundaParte .art3 {
       margin-top: 20px;
       margin-left: 20px;
@@ -238,10 +248,20 @@ main {
                   flex-direction: column; }
           main .segundaParte .art3 div.ciudad div.art3-1 h3 {
             text-align: center; }
-        main .segundaParte .art3 div.ciudad img {
-          width: 400px;
-          height: 320px;
-          -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-                  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          margin: 10px;
-          float: left; }
+        main .segundaParte .art3 div.ciudad div.img1 {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
+          main .segundaParte .art3 div.ciudad div.img1 img {
+            width: 380px;
+            height: 350px;
+            -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            margin: 10px;
+            float: right; }
